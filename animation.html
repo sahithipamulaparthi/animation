@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width", initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        div{
+            height: 100px;
+            width: 100px;
+            background-color: blueviolet;
+            animation-name: square;
+            animation-duration: 3s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+            animation-fill-mode: forwards;
+            position: absolute;
+            
+        }
+        @keyframes square{
+            0%{
+                background-color: aquamarine;
+                top: 0px;
+                left:500px;
+
+            }
+            25%{
+                background-color: blue;
+                top: 0px;
+                left: 500px;
+            }
+           50%{
+            background-color: greenyellow;
+             top:500px;
+            left:500px;
+           }
+           75%{
+            background-color: orange;
+            top:500px;
+            left:0px;
+           }
+           100%{
+            background-color: palevioletred;
+            top:0px;
+            left:0px
+        }
+        }
+    </style>
+</head>
+<body>
+    <!--animation-->
+     <!-- 8 properties of animation -->
+     <!-- 1. @keyframes 
+    2.animation name
+3.animation duration
+4.animation delay
+5.animastion iteration count
+6.animation direction
+7.animation timimg function
+8.animation fill mode-->
+
+<!-- 1.@keyframe: it is called as root of an animation. without  @keyframes animation wiol not run.
+any css properties should be written in @keyframes only.
+along with @keyframes animation name should be given together  -->
+
+<!-- 2. AnimationName: name given to animation,it should be called along with @keyframes -->
+
+<!-- 3. Animation duration : from starting to ending to complete one cycle how long the time is required
+(values should be given in seconds) -->
+
+<!-- 4. Animation delay: it is used to delay the animation,it will start working after some time given
+(value should given in seconds) -->
+
+<!-- 5. Animation iteration count: how many times the animation should be repeated in given timing  -->
+
+<!-- 6. Animaton direction: in which direction the animation should be travelled -->
+<!-- values:
+     alternate:forward
+reverse:backward 
+alternate-reverse: first backward then go forward-->
+
+<!-- 7.Animation timing function: speed of animation  -->
+<!-- values:
+linear: same speed to from starting to ending(normal) 
+ease: start the animation slow and move faster
+ease-in: starting slow
+ease-out: ending slow
+ease in out : starting and ending together slow-->
+
+<!-- 8.animation fill mood: it specify the position before starting and after ending
+values:
+forward: depend on direction and iteration count
+backword: depend on animation delay and direction -->
+
+<div></div>
+</body>
+</html>
